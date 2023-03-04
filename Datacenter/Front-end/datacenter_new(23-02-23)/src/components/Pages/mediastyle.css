@@ -1,0 +1,153 @@
+/* ----------- Home Media Style --------- */
+
+@media only screen and (max-width:480px) {
+  .card-container {
+    margin-left: 75px;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #home-piechart {
+    margin-left: 70px !important;
+  }
+
+  .sensor-container {
+    flex-wrap: wrap;
+    width: 93%;
+    margin-left: 75px;
+    margin-top: 0px;
+  }
+
+  .sensor-content {
+    width: 83%;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+  }
+
+  .sensors_div {
+    width: 100% !important;
+  }
+
+  .alertHistoryChart {
+    width: 93%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width:481px) {
+  .card-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .cards {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .sensor-container {
+    flex-wrap: wrap;
+  }
+
+  .sensors_div {
+    width: 80%;
+  }
+
+  .sensor-content {
+    width: 95%;
+    margin: -20px 30px 20px 2px;
+  }
+
+  .alertHistoryChart {
+    width: 95%;
+    margin-left: 2px;
+  }
+
+  #home-piechart {
+    margin-left: 13%;
+  }
+}
+
+@media only screen and (min-width:555px) and (max-width: 660px) {
+  #home-piechart {
+    margin-left: 4%;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 930px) {
+  #home-piechart {
+    margin-left: 6%;
+  }
+}
+
+
+@media only screen and (min-width:768px) {
+  .card-container {
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .cards {
+    width: 29%;
+  }
+
+  .sensor-container {
+    flex-wrap: nowrap;
+  }
+
+  .sensors_div {
+    width: 80%;
+  }
+
+  .sensor-content {
+    width: 41%;
+    margin: 0;
+  }
+
+  .alertHistoryChart {
+    width: 55%;
+  }
+}
+
+
+@media only screen and (min-width:1300px) {
+  .parent-container {
+    width: 97%;
+  }
+
+  .card-container {
+    justify-content: space-between;
+  }
+
+  .cards {
+    width: 17%;
+  }
+
+  .sensor-container {
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+
+  .sensors_div {
+    width: 80%;
+  }
+
+  .sensor-content {
+    width: 41%;
+    margin: 0;
+  }
+
+  .alertHistoryChart {
+    width: 57%;
+    margin-left: 16px;
+  }
+
+  #home-piechart {
+    margin-left: 3%;
+  }
+}
