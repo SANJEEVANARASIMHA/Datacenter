@@ -18,9 +18,9 @@ from twilio.rest import Client as TwilioClient
 # auth_token = 'ba7953a3e633e214c3762162b680ea48'
 # twiClient = TwilioClient(account_sid, auth_token)
 
-account_sid = 'AC60eabac30dace6e2901f831ed4a3f680'
-auth_token = '22962056109763ee669be76fb2ebb63e'
-twiClient = TwilioClient(account_sid, auth_token)
+#account_sid = 'AC60eabac30dace6e2901f831ed4a3f680'
+#auth_token = '22962056109763ee669be76fb2ebb63e'
+#twiClient = TwilioClient(account_sid, auth_token)
 # twiClient.region = 'Bangalore'
 # twiClient.edge = 'Datacenter'
 
@@ -316,7 +316,7 @@ def notification(body, to):
 
             # messaging_service_sid='MGaab9adab8e650a58a5eea60e5f13984f',
             # messaging_service_sid='MGab81130d6a9188dc06cc06159aeec17a',
-            messaging_service_sid='MGac17ea9f10152b8443d971bdb01d38da',
+            #messaging_service_sid='MGac17ea9f10152b8443d971bdb01d38da',
 
             # from_="+14422396066",
             body=body,
