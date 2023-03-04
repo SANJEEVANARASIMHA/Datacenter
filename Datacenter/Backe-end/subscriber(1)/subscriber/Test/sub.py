@@ -12,17 +12,6 @@ import paho.mqtt.client as paho
 from collections import Counter
 
 import yaml
-from twilio.rest import Client as TwilioClient
-
-# account_sid = 'ACbb21e076d7e97a345e7c5b2083bbc4f0'
-# auth_token = 'ba7953a3e633e214c3762162b680ea48'
-# twiClient = TwilioClient(account_sid, auth_token)
-
-#account_sid = 'AC60eabac30dace6e2901f831ed4a3f680'
-#auth_token = '22962056109763ee669be76fb2ebb63e'
-#twiClient = TwilioClient(account_sid, auth_token)
-# twiClient.region = 'Bangalore'
-# twiClient.edge = 'Datacenter'
 
 
 from sqlqueries1 import masterUpdateQuery, slaveUpdateQuery, rackSelectQuery, rackUpdateQuery, \
@@ -309,23 +298,6 @@ def assetTrackingDataFrame(assettrackingResult, assetEnergy, elem, assetTracking
                                           float(elem['Ia']), float(elem['V']), float(elem["pf"]), assetEnergy,
                                           float(elem['bat']), rackid, int(elem['uLoc']), floor_id))
 
-
-def notification(body, to):
-    try:
-        message = twiClient.messages.create(
-
-            # messaging_service_sid='MGaab9adab8e650a58a5eea60e5f13984f',
-            # messaging_service_sid='MGab81130d6a9188dc06cc06159aeec17a',
-            #messaging_service_sid='MGac17ea9f10152b8443d971bdb01d38da',
-
-            # from_="+14422396066",
-            body=body,
-            to='+91' + str(to)
-        )
-        print(message.status, message.date_sent)
-        # print(message)
-    except Exception as err:
-        print("error from notfictaion------------------------", err)
 
 
 def loopAsets(timeStamp, assets, rackResult, assetResult, slaveUpdatePayload, racksUpdatePayload, rackCount,
